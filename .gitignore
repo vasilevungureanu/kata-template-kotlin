@@ -6,3 +6,4 @@
 .editorconfig
 out
 build
+.kotlintest

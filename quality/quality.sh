@@ -24,3 +24,6 @@ checkAllShellScripts() {
 
 # Validate Shell code with shellcheck
 checkAllShellScripts
+
+# Validate Kotlin code with detekt and ktlint
+./gradlew -q detekt ktlint ktlintFormat

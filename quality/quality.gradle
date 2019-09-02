@@ -1,0 +1,31 @@
+apply plugin: "com.vanniktech.code.quality.tools"
+
+codeQualityTools {
+    failEarly = true
+    xmlReports = false
+
+    checkstyle {
+        enabled = false
+    }
+
+    cpd {
+        enabled = false
+    }
+
+    detekt {
+        config = 'quality/detekt-config.yml'
+    }
+
+    errorProne {
+        enabled = false
+    }
+
+    lint {
+        absolutePaths = true
+        textReport = false
+    }
+
+    pmd {
+        enabled = false
+    }
+}

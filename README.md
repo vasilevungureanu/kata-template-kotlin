@@ -1,6 +1,6 @@
-# JVM Kata Template
+# Kotlin Kata Template
 
-> A template for creating new kata repositories targeting Java/JVM
+> A template for creating new kata repositories targeting Kotlin/JVM
 
 ## Usage
 

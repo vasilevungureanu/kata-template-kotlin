@@ -21,9 +21,8 @@ repositories {
 }
 
 dependencies {
-    testCompile("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
+    testImplementation("io.mockk:mockk:1.9.3")
     testImplementation("org.assertj:assertj-core:3.13.2")
-    testImplementation("org.hamcrest:hamcrest-all:1.3")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     val junitVersion = "5.5.1"
@@ -32,21 +31,20 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
     testRuntimeOnly("org.junit.vintage:junit-vintage-engine:$junitVersion")
 
-    testImplementation("org.mockito:mockito-junit-jupiter:3.0.0")
-
     // Additional test flavors
     /*
     testCompile("com.google.truth:truth:1.0")
+    testCompile("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
     testCompile("junit:junit:4.12")
 
     testCompile("io.kotlintest:kotlintest-assertions:3.4.0")
     testCompile("io.kotlintest:kotlintest-core:3.4.0")
     testCompile("io.kotlintest:kotlintest-runner-junit5:3.4.0")
 
-    testImplementation("io.mockk:mockk:1.9.3")
     testImplementation("io.strikt:strikt-core:0.21.1")
-
     testImplementation("org.amshove.kluent:kluent:1.453")
+    testImplementation("org.hamcrest:hamcrest-all:1.3")
+    testImplementation("org.mockito:mockito-junit-jupiter:3.0.0")
 
     testCompile("org.spekframework.spek2:spek-dsl-jvm:2.0.6")
     testRuntime("org.spekframework.spek2:spek-runner-junit5:2.0.6")

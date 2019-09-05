@@ -28,7 +28,7 @@ echo 'Installing shellcheck'
 if [[ "${OSTYPE}" == "linux-gnu" ]]; then
   sudo apt-get install shellcheck
 elif [[ "${OSTYPE}" == "darwin"* ]]; then
-  brew install shellcheck
+  brew install shellcheck 2>/dev/null && true
 fi
 
 echo 'Installing ktlint'

@@ -35,6 +35,7 @@ dependencies {
     /*
     testCompile("com.google.truth:truth:1.0")
     testCompile("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
+    testCompile("com.willowtreeapps.assertk:assertk-jvm:0.19")
     testCompile("junit:junit:4.12")
 
     testCompile("io.kotlintest:kotlintest-assertions:3.4.0")

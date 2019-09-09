@@ -38,17 +38,24 @@ dependencies {
     testCompile("com.willowtreeapps.assertk:assertk-jvm:0.19")
     testCompile("junit:junit:4.12")
 
-    testCompile("io.kotlintest:kotlintest-assertions:3.4.0")
-    testCompile("io.kotlintest:kotlintest-core:3.4.0")
-    testCompile("io.kotlintest:kotlintest-runner-junit5:3.4.0")
+    val kotlinTestVersion = "3.4.0"
+    testCompile("io.kotlintest:kotlintest-assertions:$kotlinTestVersion")
+    testCompile("io.kotlintest:kotlintest-core:$kotlinTestVersion")
+    testCompile("io.kotlintest:kotlintest-runner-junit5:$kotlinTestVersion")
 
     testImplementation("io.strikt:strikt-core:0.21.1")
     testImplementation("org.amshove.kluent:kluent:1.453")
     testImplementation("org.hamcrest:hamcrest-all:1.3")
     testImplementation("org.mockito:mockito-junit-jupiter:3.0.0")
 
-    testCompile("org.spekframework.spek2:spek-dsl-jvm:2.0.6")
-    testRuntime("org.spekframework.spek2:spek-runner-junit5:2.0.6")
+    val kotlinDotTestVersion = "1.3.50"
+    testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlinDotTestVersion")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinDotTestVersion")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:$kotlinDotTestVersion")
+
+    val spekVersion = "2.0.6"
+    testCompile("org.spekframework.spek2:spek-dsl-jvm:$spekVersion")
+    testRuntime("org.spekframework.spek2:spek-runner-junit5:$spekVersion")
     */
 }
 

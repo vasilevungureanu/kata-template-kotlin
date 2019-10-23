@@ -4,7 +4,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("com.adarshr.test-logger") version "1.7.0"
     id("com.github.ben-manes.versions") version "0.24.0"
-    id("com.vanniktech.code.quality.tools") version "0.19.0"
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.3.50"
 }
@@ -77,4 +76,7 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
 }
 
-apply(from = file("quality/quality.gradle"))
+apply {
+    from(file("detekt/detekt.gradle"))
+    from(file("ktlint/ktlint.gradle"))
+}

@@ -25,6 +25,6 @@ checkAllShellScripts() {
 
 checkAllShellScripts
 
-./gradlew -q detekt ktlint ktlintFormat
+./gradlew -q detekt ktlintFormat ktlint
 
 ./gradlew test

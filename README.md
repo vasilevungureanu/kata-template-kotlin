@@ -1,8 +1,6 @@
-# Kotlin Kata Template
+# Kotlin/JVM Kata Template
 
-<a href="https://github.com/VasileUngureanu/repository-template/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
-
-> A template for creating new kata repositories targeting Kotlin/JVM
+A template for creating new Kata repositories targeting Android
 
 ## Usage
 
@@ -20,8 +18,3 @@ Summary or URL link to the kata description
 ./gradlew test // Runs the unit tests.
 ./gradlew dependencyUpdates // Displays the dependency updates for the project.
 ```
-
-License
--------
-
-[MIT](LICENSE) @ 2019 Vasile Ungureanu

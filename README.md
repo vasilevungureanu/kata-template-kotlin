@@ -1,6 +1,6 @@
 # Kata Template Kotlin
 
-A template for the quick starting of a Kata.
+A template for starting quickly with a Kata.
 
 ## Usage
 

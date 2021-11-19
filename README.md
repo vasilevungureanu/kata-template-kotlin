@@ -1,6 +1,6 @@
-# Kotlin/JVM Kata Template
+# Kata Template Kotlin
 
-A template for creating new Kata repositories targeting Android
+A template for the quick starting of a Kata.
 
 ## Usage
 

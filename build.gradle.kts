@@ -1,16 +1,13 @@
-import org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    id("com.adarshr.test-logger") version "1.7.0"
-    id("com.github.ben-manes.versions") version "0.24.0"
     id("java")
+    id("idea")
     id("org.jetbrains.kotlin.jvm") version "1.3.50"
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+sourceSets {
+    test {
+        java.srcDir(file("src/test/kotlin/"))
+    }
 }
 
 repositories {
@@ -58,20 +55,10 @@ dependencies {
     */
 }
 
-tasks.clean {
-    doFirst {
-        delete("out")
-    }
-}
-
 tasks.test {
     useJUnitPlatform()
-    testLogging {
-        exceptionFormat = FULL
-        events("passed", "skipped", "failed", "standard_error", "standard_out")
-    }
-}
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }

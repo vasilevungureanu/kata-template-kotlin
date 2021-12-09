@@ -75,8 +75,3 @@ tasks.test {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
 }
-
-apply {
-    from(file("detekt/detekt.gradle"))
-    from(file("ktlint/ktlint.gradle"))
-}
